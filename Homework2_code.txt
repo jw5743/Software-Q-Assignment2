@@ -1,0 +1,33 @@
+def Calc():
+	height = float(input('Please enter your height in inches: '))
+	print(height)
+	weight = float(input('Pleae enter your weight in pounds: '))
+	print(weight)
+	
+	weight = weight * 0.45
+	height = height * 0.25
+	height = height * height
+	top = weight / height
+
+	print(f'Your human weight is: {top:.2f}')
+
+	if top <= 18.4:
+		print('You are underweight')
+
+	elif top <= 24.9:
+		print('You are healthy <3 ')
+
+	elif top <= 29.9:
+		print('You are over weight :( ')
+	
+	else:
+		print('You are obese :( ')
+
+
+if __name__ == '__main__':
+	Calc()
+
+
+	 
+
+
